@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassSite — Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="transition show" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>
+          <strong>GlassSite</strong>
+          <span>Premium glass UI template</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="store.html">Store</a>
+        <a data-nav href="contact.html">Contact</a>
+        <a data-nav href="inquiries.html">Inquiries</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Log in</a>
+        <a class="btn primary" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero glass reveal">
+      <div>
+        <h1>High‑fidelity glass UI with smooth motion.</h1>
+        <p>
+          A modern multipage template featuring glassmorphism panels, premium gradients,
+          and subtle animations. Perfect for agencies, ecommerce, and product sites.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn primary" href="store.html">Explore Store →</a>
+          <a class="btn" href="inquiries.html">Make an Inquiry</a>
+        </div>
+        <div class="badges">
+          <div class="badge">⚡ Fast & lightweight</div>
+          <div class="badge">🧊 Glass panels</div>
+          <div class="badge">✨ Scroll reveals</div>
+          <div class="badge">📱 Responsive layout</div>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi glass reveal">
+          <strong>+42%</strong>
+          <small>Perceived quality uplift with motion + depth</small>
+        </div>
+        <div class="kpi glass reveal">
+          <strong>6</strong>
+          <small>Pages included (plus auth screens)</small>
+        </div>
+        <div class="kpi glass reveal">
+          <strong>0</strong>
+          <small>Framework dependencies — just HTML/CSS/JS</small>
+        </div>
+        <div class="kpi glass reveal">
+          <strong>AAA‑ish</strong>
+          <small>Readable contrast, reduced-motion support</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>Designed to feel expensive</h2>
+        <p>Glass layers • Gradients • Micro-interactions</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card glass reveal">
+          <div class="icon">🧊</div>
+          <h3>Glassmorphism</h3>
+          <p>Backdrops, subtle strokes, and layered highlights for a premium glass look.</p>
+        </div>
+        <div class="card glass reveal">
+          <div class="icon">✨</div>
+          <h3>Motion & reveal</h3>
+          <p>IntersectionObserver-based scroll reveals and smooth page transitions.</p>
+        </div>
+        <div class="card glass reveal">
+          <div class="icon">🛍️</div>
+          <h3>Store-ready layout</h3>
+          <p>Product cards, category chips, and search—ready for your product data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>Quick Start</h2>
+        <p>Drop into any hosting</p>
+      </div>
+      <div class="grid-2">
+        <div class="card glass reveal">
+          <h3>1) Replace content</h3>
+          <p>Update brand name, copy, and products. Swap colors in <code>:root</code> variables.</p>
+        </div>
+        <div class="card glass reveal">
+          <h3>2) Connect backend</h3>
+          <p>Wire login/signup to Firebase/Supabase and store to Stripe/Shopify APIs.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="foot glass">
+      <div>© <span id="y"></span> GlassSite. Built with glass + gradients.</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassSite — About</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="transition show" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div><strong>GlassSite</strong><span>Premium glass UI template</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="store.html">Store</a>
+        <a data-nav href="contact.html">Contact</a>
+        <a data-nav href="inquiries.html">Inquiries</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Log in</a>
+        <a class="btn primary" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>About</h2>
+        <p>What this template is built for</p>
+      </div>
+      <div class="grid-2">
+        <div class="card glass reveal">
+          <h3>High-fidelity visuals</h3>
+          <p>
+            This design uses layered gradients, subtle strokes, and blurred backdrops to create
+            depth without heavy imagery. It’s intended to feel premium and modern.
+          </p>
+        </div>
+        <div class="card glass reveal">
+          <h3>Easy to extend</h3>
+          <p>
+            Keep it static or attach your backend. Add a CMS, product data, checkout, or auth
+            in small steps—your UI is ready.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>Our values</h2>
+        <p>Quality, clarity, and polish</p>
+      </div>
+      <div class="grid-3">
+        <div class="card glass reveal">
+          <div class="icon">🎯</div>
+          <h3>Clarity</h3>
+          <p>Readable text, clear hierarchy, and consistent spacing.</p>
+        </div>
+        <div class="card glass reveal">
+          <div class="icon">🧠</div>
+          <h3>Usability</h3>
+          <p>Responsive layout, accessible contrast, reduced motion support.</p>
+        </div>
+        <div class="card glass reveal">
+          <div class="icon">💎</div>
+          <h3>Polish</h3>
+          <p>Micro-interactions that make the UI feel “alive”.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="foot glass">
+      <div>© <span id="y"></span> GlassSite.</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="store.html">Store</a>
+        <a class="btn" href="inquiries.html">Inquiries</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassSite — Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="transition show" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div><strong>GlassSite</strong><span>Premium glass UI template</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="store.html">Store</a>
+        <a data-nav href="contact.html">Contact</a>
+        <a data-nav href="inquiries.html">Inquiries</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Log in</a>
+        <a class="btn primary" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Send a message — we’ll respond fast</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card glass reveal">
+          <h3>Message us</h3>
+          <form onsubmit="event.preventDefault(); alert('Message sent (demo). Connect backend/email service.');">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="msg">Message</label>
+              <textarea id="msg" placeholder="Tell us what you need…" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send message →</button>
+            <div class="helper">For real sending, connect Formspree / Resend / backend.</div>
+          </form>
+        </div>
+
+        <div class="card glass reveal">
+          <h3>Details</h3>
+          <p style="color: rgba(255,255,255,0.72); line-height:1.65; margin-top:8px;">
+            Replace these with your real contact details and social links.
+          </p>
+          <div style="display:grid; gap:10px; margin-top:14px;">
+            <div class="glass card">
+              <strong>Email</strong>
+              <div style="color: rgba(255,255,255,0.70); margin-top:6px;">hello@yourdomain.com</div>
+            </div>
+            <div class="glass card">
+              <strong>Phone</strong>
+              <div style="color: rgba(255,255,255,0.70); margin-top:6px;">+44 0000 000000</div>
+            </div>
+            <div class="glass card">
+              <strong>Hours</strong>
+              <div style="color: rgba(255,255,255,0.70); margin-top:6px;">Mon–Fri • 9:00–17:00</div>
+            </div>
+          </div>
+          <div style="margin-top:12px;">
+            <a class="btn" href="inquiries.html">Prefer an inquiry form?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="foot glass">
+      <div>© <span id="y"></span> GlassSite.</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="store.html">Store</a>
+        <a class="btn" href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

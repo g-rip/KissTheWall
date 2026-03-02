@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassSite — Inquiries</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="transition show" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div><strong>GlassSite</strong><span>Premium glass UI template</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="store.html">Store</a>
+        <a data-nav href="contact.html">Contact</a>
+        <a data-nav href="inquiries.html">Inquiries</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Log in</a>
+        <a class="btn primary" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>Inquiries</h2>
+        <p>Product questions • partnerships • custom requests</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card glass reveal">
+          <h3>Inquiry form</h3>
+          <form onsubmit="event.preventDefault(); alert('Inquiry submitted (demo). Connect backend/email service.');">
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" required>
+                <option value="">Select…</option>
+                <option>Product availability</option>
+                <option>Custom order</option>
+                <option>Bulk pricing</option>
+                <option>Partnership</option>
+                <option>Support</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="product">Product (optional)</label>
+              <input id="product" placeholder="e.g., Aurora Glass Lamp" />
+            </div>
+
+            <div class="field">
+              <label for="email">Your email</label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="details">Details</label>
+              <textarea id="details" placeholder="Tell us what you need…" required></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Submit inquiry →</button>
+            <div class="helper">We recommend routing this into a ticketing system or email.</div>
+          </form>
+        </div>
+
+        <div class="card glass reveal">
+          <h3>What happens next?</h3>
+          <p style="color: rgba(255,255,255,0.72); line-height:1.65;">
+            This template is designed to make inquiries feel premium and frictionless.
+            You can connect the form to:
+          </p>
+          <div style="display:grid; gap:10px; margin-top:14px;">
+            <div class="glass card">
+              <strong>Option A — Form service</strong>
+              <div style="color: rgba(255,255,255,0.70); margin-top:6px;">Formspree, Basin, Getform</div>
+            </div>
+            <div class="glass card">
+              <strong>Option B — Email API</strong>
+              <div style="color: rgba(255,255,255,0.70); margin-top:6px;">Resend, SendGrid, Mailgun</div>
+            </div>
+            <div class="glass card">
+              <strong>Option C — Backend</strong>
+              <div style="color: rgba(255,255,255,0.70); margin-top:6px;">Node/Express + database + notifications</div>
+            </div>
+          </div>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="store.html">Browse store</a>
+            <a class="btn" href="contact.html">General contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="foot glass">
+      <div>© <span id="y"></span> GlassSite.</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="login.html">Log in</a>
+        <a class="btn" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

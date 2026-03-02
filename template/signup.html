@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassSite — Sign up</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="transition show" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div><strong>GlassSite</strong><span>Premium glass UI template</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="store.html">Store</a>
+        <a data-nav href="contact.html">Contact</a>
+        <a data-nav href="inquiries.html">Inquiries</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Log in</a>
+        <a class="btn primary" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section glass reveal" style="max-width: 560px; margin: 34px auto 0;">
+      <div class="section-title">
+        <h2>Create account</h2>
+        <p>Fast, clean, and premium</p>
+      </div>
+
+      <form data-signup-form>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="pw">Password</label>
+          <input id="pw" type="password" placeholder="Create a password" required />
+          <div class="helper">Use 8+ characters and a mix of letters + numbers.</div>
+        </div>
+        <button class="btn primary" type="submit">Sign up →</button>
+        <div class="helper">
+          Already have an account? <a href="login.html" style="color: var(--accent); text-decoration:none;">Log in</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

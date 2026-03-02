@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassSite — Store</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="transition show" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div><strong>GlassSite</strong><span>Premium glass UI template</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="store.html">Store</a>
+        <a data-nav href="contact.html">Contact</a>
+        <a data-nav href="inquiries.html">Inquiries</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Log in</a>
+        <a class="btn primary" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" data-store>
+    <section class="section glass reveal">
+      <div class="section-title">
+        <h2>Store</h2>
+        <p>Filter products • search • inquire</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" role="tablist" aria-label="Categories">
+          <button class="chip active" data-chip="All">All</button>
+          <button class="chip" data-chip="Home">Home</button>
+          <button class="chip" data-chip="Office">Office</button>
+          <button class="chip" data-chip="Lifestyle">Lifestyle</button>
+          <button class="chip" data-chip="Apparel">Apparel</button>
+          <button class="chip" data-chip="Digital">Digital</button>
+        </div>
+
+        <div style="min-width: min(360px, 100%);">
+          <input data-search type="search" placeholder="Search products…" aria-label="Search products" />
+          <div class="helper">Tip: click a category chip to filter.</div>
+        </div>
+      </div>
+
+      <div class="products" data-products>
+        <!-- JS renders products -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="foot glass">
+      <div>© <span id="y"></span> GlassSite.</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="inquiries.html">Inquiries</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
